@@ -1,0 +1,38 @@
+@use '../../styles/sass/abstracts/' as *;
+
+.border {
+  margin: 3rem auto;
+  max-width: 40rem;
+}
+
+.detail {
+  text-align: center;
+
+  img {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .main {
+    margin: 1rem;
+  }
+}
+
+.actions {
+  padding: 1.5rem;
+  text-align: center;
+
+  .button {
+    cursor: pointer;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+
+    &:hover, &:active {
+      background-color: $brand-color;
+      color: $main-white;
+    }
+  }
+}

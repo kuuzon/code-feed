@@ -1,0 +1,8 @@
+// GLOBAL LEVEL SCSS (compile to globals.css)
+// NOTE: All other SCSS compiles at component-level (see components folder)
+
+// vendor imports (for any responsive framework SASS integration)
+
+// base imports
+@use './base/base';
+@use './base/container';

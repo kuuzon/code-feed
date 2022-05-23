@@ -1,0 +1,52 @@
+@use '../../styles/sass/abstracts/' as *;
+
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primary-color;
+  padding: 0 10%;
+
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: baseline;
+    }
+  
+    li {
+      margin-left: 3rem;
+    }
+  
+    a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: $complementary-color;
+  
+      &:hover, &:active {
+        color: white;
+      }
+    }
+  }
+}
+
+.brand {
+  font-size: 2rem;
+  color: $main-white;
+  font-weight: bold;
+
+  span {
+    margin: 1rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    display: inline;
+    color: $brand-color;
+    vertical-align: text-bottom;
+  }
+}
