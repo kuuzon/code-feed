@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 import axios from "axios";
-import { server } from '../config'
+// import { server } from '../config'
 import HeroSection from '../components/layout/Hero';
 import NewsList from '../components/news/NewsList';
 
@@ -24,7 +24,8 @@ function Home(props) {
 // STATIC SITE GENERATION (snippet: "ngsp")
 export const getStaticProps = async () => {
   // Fetch data from Internal API ("Code News")
-  const response = await axios.get(`${server}/api/news`);
+  // const response = await axios.get(`${server}/api/news`);
+  const response = await axios.get(`${process.env.SERVER_NAME}/api/news`);
   const data = await response.data
 
   // Returned data as props & ISR functionality
