@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import Layout from '../components/layout/Layout'
 import Script from 'next/script';
+import { Fragment } from 'react';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router'
 
@@ -21,7 +22,7 @@ function MyApp({ Component, pageProps }) {
   }, [router.events])
 
   return (
-    <>
+    <Fragment>
       <Script 
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`}
         strategy='afterInteractive'
@@ -43,7 +44,7 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </>
+    </Fragment>
   )
 }
 
