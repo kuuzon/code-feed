@@ -1,15 +1,3 @@
-// module.exports = {
-//   reactStrictMode: true,
-//   images: {
-//     domains: 
-//       [
-//         'ichef.bbci.co.uk', 
-//         'm.files.bbci.co.uk',
-//         'live-production.wcms.abc-cdn.net.au'
-//       ],
-//   },
-// }
-
 const {
   PHASE_DEVELOPMENT_SERVER,
   PHASE_PRODUCTION_BUILD,
