@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+import Head from 'next/head';
 import axios from "axios";
 import { server } from '../config'
 import HeroSection from '../components/layout/Hero';
@@ -5,10 +7,17 @@ import NewsList from '../components/news/NewsList';
 
 function Home(props) {
   return (
-    <div>
+    <Fragment>
+      <Head>
+        <title>Code-Feed | Home</title>
+        <meta 
+          name='description'
+          description='Browse all the coding news of today from around the globe'
+        />
+      </Head>
       <HeroSection title={'Code Feed'} description={'Catch up on all the coding news from around the globe, at the touch of a button ...'}/>
       <NewsList loadedNews={props.news} />
-    </div>
+    </Fragment>
   );
 }
 

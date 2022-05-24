@@ -1,15 +1,26 @@
+import { Fragment } from 'react';
+import Head from 'next/head';
 import axios from 'axios';
 import { server } from '../../config'
 import NewsDetail from "../../components/news/NewsDetail";
 
 function NewsDetails({ newsItem }) {
   return (
-    <NewsDetail 
-      image={newsItem.image}
-      title={newsItem.title}
-      description={newsItem.description}
-      category={newsItem.category}
-    />
+    <Fragment>
+      <Head>
+        <title>Code-Feed | {newsItem.category}</title>
+        <meta 
+          name='description'
+          description={newsItem.title + ': ' + newsItem.description}
+        />
+      </Head>
+      <NewsDetail 
+        image={newsItem.image}
+        title={newsItem.title}
+        description={newsItem.description}
+        category={newsItem.category}
+      />
+    </Fragment>
   );
 }
 

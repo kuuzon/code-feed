@@ -7,6 +7,7 @@ module.exports = {
     domains: 
       [
         'ichef.bbci.co.uk', 
+        'm.files.bbci.co.uk',
         'live-production.wcms.abc-cdn.net.au'
       ],
   },

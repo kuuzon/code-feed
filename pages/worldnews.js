@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
+import Head from 'next/head';
 import axios from "axios";
 import HeroSection from "../components/layout/Hero";
 import NewsList from '../components/news/NewsList';
@@ -35,10 +36,17 @@ function WorldNews() {
   }
 
   return (
-    <div>
+    <Fragment>
+      <Head>
+        <title>Code-Feed | GlobeFeed</title>
+        <meta 
+          name='description'
+          description='Browse all the global news of today via BBC News UK'
+        />
+      </Head>
       <HeroSection title={'Global News Feed'} description={'Catch up on all the global news via BBC News'}/>
       <NewsList loadedNews={loadedNews} />
-    </div>
+    </Fragment>
   );
 }
 

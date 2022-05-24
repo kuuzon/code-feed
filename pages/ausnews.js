@@ -1,13 +1,22 @@
+import { Fragment } from 'react';
+import Head from 'next/head';
 import axios from "axios";
 import HeroSection from "../components/layout/Hero";
 import NewsList from '../components/news/NewsList';
 
 function AusNews(props) {
   return (
-    <div>
+    <Fragment>
+      <Head>
+        <title>Code-Feed | AusFeed</title>
+        <meta 
+          name='description'
+          description='Browse all the Australian news of today via ABC News AU'
+        />
+      </Head>
       <HeroSection title={'AUS News Feed'} description={'Catch up on all Australian News via ABC News'}/>
       <NewsList loadedNews={props.worldNews} />
-    </div>
+    </Fragment>
   );
 }
 

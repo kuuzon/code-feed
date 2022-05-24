@@ -7,6 +7,7 @@ import { useRouter } from 'next/router'
 import * as ga from '../lib/google-analytics/index';
 
 function MyApp({ Component, pageProps }) {
+  // OPTIONAL: Allow for Page View Metrics!
   const router = useRouter();
 
   useEffect(() => {
