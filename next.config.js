@@ -1,11 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
-
-module.exports = nextConfig
-
 module.exports = {
+  reactStrictMode: true,
+  env: {
+    GOOGLE_ANALYTICS_ID: 'G-13HXEYDMEP'
+  },
   images: {
     domains: 
       [
