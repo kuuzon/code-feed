@@ -4,11 +4,6 @@
 
 We now have a basic application to push to a live web server.  With our QA revision work in mind, we can enact some testing and adjustments BEFORE and AFTER deployment, in order to smooth out the production process.
 
-**MINOR CHANGES PRIOR TO DEPLOYMENT:**
-- `NewsDetail.js`: 
-  - Bug fix to the Link/Button to inherit better CSS syntax and work properly **AND** 
-  - Minor adjustments to `img` CSS to smooth the borders
-
 &nbsp;
 
 ### 1. USER INTERFACER (UI) QA TESTING & FIXES
@@ -64,7 +59,7 @@ We now have a basic application to push to a live web server.  With our QA revis
 
 &nbsp;
 
-## B. DEPLOYMENT TO VERCEL ()
+## B. DEPLOYMENT TO VERCEL
 
 **1. Go to Vercel Hosting: `https://vercel.com/`**
 
@@ -114,11 +109,9 @@ We now have a basic application to push to a live web server.  With our QA revis
 
 &nbsp;
 
-**6. NOTE YOUR DOMAIN**
+**7. FINAL NOTES**
 
-  - As above in 1., we need to insert our domain into our production `config` file, so the deployment can occur normally!
-
-**7. FINAL NOTE**
+  - **NOTE YOUR DOMAIN** - As above in 1., we need to insert our domain into our production `config` file, so the deployment can occur normally!
 
   - You may ALSO NOTE on QA testing, that you hit a 426 ERROR with your CSR React SPA page.
 

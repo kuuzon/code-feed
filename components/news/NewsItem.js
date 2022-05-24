@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import Card from '../ui/Card';
 import styles from './NewsItem.module.scss';
+import Image from 'next/image';
 
 function NewsItem(props) {
   // Programmatic Navigation
@@ -14,8 +15,22 @@ function NewsItem(props) {
     <Card>
       <div className={styles.image}>
         { 
-          props.image ? <img src={props.image} alt={props.title} /> 
-          : <img src={props.urlToImage} alt={props.title} /> 
+          props.image ? 
+            <Image 
+              src={props.image} 
+              alt={props.title} 
+              width={650}
+              height={300}
+              layout="intrinsic"
+            /> 
+          : 
+            <Image 
+              src={props.urlToImage} 
+              alt={props.title} 
+              width={650}
+              height={300}
+              layout="intrinsic"
+            /> 
         }
       </div>
       <div className={styles.content}>

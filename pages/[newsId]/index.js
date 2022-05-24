@@ -13,21 +13,6 @@ function NewsDetails({ newsItem }) {
   );
 }
 
-// STATIC SITE DYNAMIC PATHS (snippet: "ngspa")
-export const getStaticPaths = async () => {
-  const response = await axios.get(`${server}/api/news`);
-  const loadedNews = await response.data;
-
-  const paths = loadedNews.map((news) => ({
-    params: { newsId: news.id.toString() }
-  }))
-
-  return {
-      paths,
-      fallback: false
-  }
-}
-
 // STATIC SITE GENERATION (snippet: "ngsp")
 export const getStaticProps = async ( context ) => {
   // Fetch Data for Single News Item 
@@ -42,5 +27,19 @@ export const getStaticProps = async ( context ) => {
     },
   };
 };
+
+// STATIC SITE DYNAMIC PATHS (snippet: "ngspa")
+export const getStaticPaths = async () => {
+  const response = await axios.get(`${server}/api/news`);
+  const loadedNews = await response.data;
+
+  const ids = loadedNews.map((news) => news.id);
+  const paths = ids.map((id) => ({ params: { newsId: id.toString() }}))
+
+  return {
+      paths,
+      fallback: false
+  }
+}
 
 export default NewsDetails;

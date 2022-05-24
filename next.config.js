@@ -4,3 +4,13 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+
+module.exports = {
+  images: {
+    domains: 
+      [
+        'ichef.bbci.co.uk', 
+        'live-production.wcms.abc-cdn.net.au'
+      ],
+  },
+}

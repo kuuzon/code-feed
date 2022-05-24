@@ -1,15 +1,20 @@
 import Card from "../ui/Card";
 import Link from "next/link";
 import styles from './NewsDetail.module.scss';
+import Image from 'next/image'
 
 function NewsDetail(props) {
   return (
     <div className={styles.border}>
       <Card>
         <div className={styles.detail}>
-          <img 
+          <Image 
             src={props.image} 
             alt={props.title}
+            width={650}
+            height={500}
+            layout="intrinsic"
+            priority={true}
           />
           <div className={styles.main}>
             <h1>{props.title}</h1>
