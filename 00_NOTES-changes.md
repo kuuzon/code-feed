@@ -1,0 +1,3 @@
+- creation of button UI component
+- improved naming consistency of components folders with industry convention
+- additional cleanup of components into sub-folders with use of index.js convention

@@ -1,0 +1,21 @@
+@use '../../../styles/sass/abstracts/' as *;
+
+.container {
+  margin: 3rem auto;
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+}
+
+.codle {
+  margin: 0 auto;
+  padding: 0 30px;
+  min-height: 700px;
+  overflow: auto;
+  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+  text-align: center;  
+  color: white;
+  background-color: rgb(18, 18, 19);
+}

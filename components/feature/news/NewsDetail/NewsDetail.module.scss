@@ -1,0 +1,24 @@
+@use '../../../../styles/sass/abstracts/' as *;
+
+.border {
+  margin: 3rem auto;
+  max-width: 40rem;
+}
+
+.detail {
+  text-align: center;
+
+  img {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .main {
+    margin: 1rem;
+  }
+}
+
+.actions {
+  padding: 1.5rem;
+  text-align: center;
+}

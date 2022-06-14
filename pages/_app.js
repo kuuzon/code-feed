@@ -1,14 +1,13 @@
 import '../styles/globals.css'
-import Layout from '../components/layout/Layout'
+import Layout from '../components/layout'
 import Script from 'next/script';
 import { Fragment } from 'react';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router'
-
-import * as ga from '../lib/google-analytics/index';
+import * as ga from '../lib/google-analytics';
 
 function MyApp({ Component, pageProps }) {
-  // OPTIONAL: Allow for Page View Metrics!
+  // Allow for Page View Metrics!
   const router = useRouter();
 
   useEffect(() => {

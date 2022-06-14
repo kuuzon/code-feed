@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 import axios from "axios";
-import HeroSection from '../components/layout/Hero';
-import NewsList from '../components/news/NewsList';
+import Hero from '../components/layout/Hero';
+import NewsList from '../components/feature/news/NewsList';
 
 function Home(props) {
   return (
@@ -14,7 +14,7 @@ function Home(props) {
           description='Browse all the coding news of today from around the globe'
         />
       </Head>
-      <HeroSection title={'Code Feed'} description={'Catch up on all the coding news from around the globe, at the touch of a button ...'}/>
+      <Hero title={'Code Feed'} description={'Catch up on all the coding news from around the globe, at the touch of a button ...'}/>
       <NewsList loadedNews={props.news} />
     </Fragment>
   );

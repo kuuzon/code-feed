@@ -1,9 +1,9 @@
 import { Fragment, useEffect, useState } from 'react';
 import Head from 'next/head';
 import axios from "axios";
-import HeroSection from "../components/layout/Hero";
-import NewsList from '../components/news/NewsList';
-import AlertBar from '../components/ui/AlertBar';
+import Hero from '../components/layout/Hero';
+import NewsList from '../components/feature/news/NewsList';
+import AlertBar from '../components/common/AlertBar';
 
 function WorldNews() {
   const [loadedNews, setLoadedNews] = useState([]);
@@ -44,7 +44,7 @@ function WorldNews() {
           description='Browse all the global news of today via BBC News UK'
         />
       </Head>
-      <HeroSection title={'Global News Feed'} description={'Catch up on all the global news via BBC News'}/>
+      <Hero title={'Global News Feed'} description={'Catch up on all the global news via BBC News'}/>
       <NewsList loadedNews={loadedNews} />
     </Fragment>
   );

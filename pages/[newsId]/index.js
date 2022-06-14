@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 import axios from 'axios';
-import NewsDetail from "../../components/news/NewsDetail";
+import NewsDetail from '../../components/feature/news/NewsDetail';
 
 function NewsDetails({ newsItem }) {
   return (
