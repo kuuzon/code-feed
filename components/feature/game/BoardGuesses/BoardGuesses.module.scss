@@ -1,3 +1,5 @@
+@use '../../../../styles/sass/abstracts/' as *;
+
 .board {
   width: 350px;
   height: 420px;
@@ -5,7 +7,7 @@
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 5px;
-  color: white;
+  color: $codle-text-color;
 }
 
 .row {
@@ -24,21 +26,21 @@
   font-weight: bold;
   vertical-align: middle;
   box-sizing: border-box;
-  color: white;
+  color: $codle-text-color;
   text-transform: uppercase;
   user-select: none;
 }
 
 .empty {
-  border: 2px solid rgb(86, 87, 88);
+  border: 2px solid $codle-base-color;
 }
 
 .correct {
-  background-color: rgb(83, 141, 78);
+  background-color: $codle-success-color;
   border: none !important
 }
 
 .present {
-  background-color: rgb(181, 159, 59);
+  background-color: $codle-present-color;
   border: none !important
 }

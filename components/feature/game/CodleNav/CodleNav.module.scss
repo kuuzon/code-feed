@@ -1,0 +1,8 @@
+@use '../../../../styles/sass/abstracts/' as *;
+
+.header {
+  margin: auto;
+  padding: 0rem;
+  max-width: 30vw;
+  border-bottom: 1px solid $codle-base-color;
+}

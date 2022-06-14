@@ -14,8 +14,8 @@
   padding: 0 30px;
   min-height: 700px;
   overflow: auto;
-  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: $codle-font;
   text-align: center;  
-  color: white;
-  background-color: rgb(18, 18, 19);
+  color: $codle-text-color;
+  background-color: $codle-background-color;
 }

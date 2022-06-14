@@ -5,7 +5,7 @@ import axios from "axios";
 
 // Import content / UI
 import Container from '../../components/common/Container'
-import Description from '../../components/feature/game/Description';
+import CodleNav from '../../components/feature/game/CodleNav';
 import Board from '../../components/feature/game/Board'
 import BoardGuesses from '../../components/feature/game/BoardGuesses';
 import GameOver from '../../components/feature/game/GameOver';
@@ -54,7 +54,7 @@ function CodlePage({ answer }) {
         />
       </Head>
       <Container codle={true}>
-        <Description />
+        <CodleNav />
         <Board guesses={guesses} setGuesses={setGuesses} />
         <BoardGuesses guesses={guesses} answer={answer} />
       </Container>

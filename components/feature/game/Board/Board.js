@@ -1,18 +1,18 @@
 import styles from './Board.module.scss';
 import { useState } from 'react';
 
-function Keyboard({ guesses, setGuesses }) {
+function Board({ guesses, setGuesses }) {
   const [guess, setGuess] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    setGuesses([...guesses, guess]);
+    setGuess("");
+    
     if (guess.length !== 5) {
       return;
     }
-
-    setGuesses([...guesses, guess]);
-    setGuess("");
   }
 
   const handleChange = (e) => {
@@ -37,4 +37,4 @@ function Keyboard({ guesses, setGuesses }) {
   );
 }
 
-export default Keyboard;
+export default Board;

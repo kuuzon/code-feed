@@ -1,11 +1,21 @@
 // VARIABLES
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
-// COLOURS
+// MAIN COLORS
 $primary-color: #111827;
 $complementary-color: #9ca3af;
 $brand-color: #4338ca;
 $main-white: #FFFFFF;
 
 // TYPOGRAPHY
-$primary-font: 'Roboto', sans-serif;
+$primary-font: 'Roboto', Arial, sans-serif;
+
+// WORDLE/CODLE COLORS
+$codle-text-color: #FFFFFF;
+$codle-background-color: rgb(18, 18, 19);
+$codle-base-color: rgb(86, 87, 88);
+$codle-success-color: rgb(83, 141, 78);
+$codle-present-color: rgb(181, 159, 59);
+
+// WORDLE/CODLE TYPOGRAPHY
+$codle-font: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;

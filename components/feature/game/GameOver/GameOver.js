@@ -1,5 +1,4 @@
 import { Fragment } from 'react';
-import Link from "next/link";
 import styles from './GameOver.module.scss'
 import BoardGuesses from "../BoardGuesses";
 import Button from '../../../common/Button'

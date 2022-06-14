@@ -1,9 +1,11 @@
+@use '../../../../styles/sass/abstracts/' as *;
+
 .row {
   margin-top: 2rem;
   padding: 0.5rem;
-  border: 2px solid rgb(86, 87, 88);
-  color: white;
-  background-color: rgb(18, 18, 19);
+  border: 2px solid $codle-base-color;
+  color: $codle-text-color;
+  background-color: $codle-background-color;
   width: 20vw;
   font-size: 2rem;
   line-height: 2rem;
