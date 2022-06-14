@@ -5,7 +5,7 @@ import axios from "axios";
 
 // Import content / UI
 import Container from '../../components/common/Container'
-import Description from '../../components/feature/complex/Description';
+import WordleNav from '../../components/feature/complex/WordleNav';
 
 function WordlePage() {
   return (
@@ -18,7 +18,7 @@ function WordlePage() {
         />
       </Head>
       <Container codle={true}>
-        <Description />
+        <WordleNav />
       </Container>
     </Fragment>
   );

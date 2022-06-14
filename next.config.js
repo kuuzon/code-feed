@@ -25,7 +25,7 @@ module.exports = (phase) => {
       if (isDev) return 'http://localhost:3000/'
       if (isProd) return 'https://code-feed.vercel.app/'
     })(),
-    GOOGLE_ANALYTICS_ID: 'G-13HXEYDMEP',
+    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
   }
 
   // Next.config is an object

@@ -16,6 +16,7 @@ export const codle = [
   "cyber",
   "debug",
   "event",
+  "https",
   "index",
   "input",
   "linux",
@@ -23,10 +24,12 @@ export const codle = [
   "mongo",
   "mysql",
   "pages",
+  "parse",
   "pixel",
   "query",
   "react",
   "redis",
+  "scope",
   "serve",
   "state",
   "style",
@@ -36,5 +39,6 @@ export const codle = [
   "unity",
   "vuejs",
   "while",
-  "xcode"
+  "xcode",
+  "xhtml"
 ]
